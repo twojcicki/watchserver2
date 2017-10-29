@@ -8,12 +8,12 @@ import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
-import org.springframework.web.socket.handler.TextWebSocketHandler;
+import org.springframework.web.socket.handler.BinaryWebSocketHandler;
 
 @Component
-public class EchoHandler extends TextWebSocketHandler {
+public class EchoHandler2 extends BinaryWebSocketHandler {
 
-	final static Logger logger = LoggerFactory.getLogger(EchoHandler.class);
+	final static Logger logger = LoggerFactory.getLogger(EchoHandler2.class);
 
 	@Autowired
 	private WatchService watchService;
